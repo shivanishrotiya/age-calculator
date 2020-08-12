@@ -121,14 +121,11 @@
         </form>
     </div>
 
-    <!-- 
-        It is advised to keep javascript here, why? 
-        This can be a nice talking point during interview 
-    -->
+   
     <script>
 
         function titleizeName(name) {
-            // FIXME
+           
              var array = name.split(" ");
              console.log(array);
              var firstname =array[0];
@@ -141,7 +138,7 @@ lastname= lastname.charAt(0).toUpperCase() + lastname.slice(1);
         }
 
         function calculateAge(date) {
-            // FIXME
+           
          var x = Date.parse(date);
 var y= Date.now();
 var z = y-x;
@@ -152,14 +149,14 @@ var z = y-x;
   var day = hour*24;
   var year = day*365;
 
-//let the age conversion begin
+
 var years = Math.round(z/year);
 
 return years;
         }
 
         function colorizeBorder(age, element) {
-            // FIXME
+           
             if (age <= 18) {
  document.getElementById("menu1").style.borderColor="green";
 
@@ -195,12 +192,12 @@ document.getElementById("menu1").style.borderColor="red";
                     age.innerText = ageByDate;
                 }
 
-                // Reaveal hidden age container
+                
                 if (name !== "" && date !== "") {
                     const ageContainer = document.querySelector('.age__container');
                     ageContainer.style.display = "block";
                     const avatar = document.querySelector('.avatar');
-                    colorizeBorder(ageByDate, avatar); // fixes up color
+                    colorizeBorder(ageByDate, avatar); 
                 }
             });
         })()
